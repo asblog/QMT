@@ -1,7 +1,7 @@
 # QMT: Quadrato Motor Training
 
 Instructions for use:
-https://neurodiversethoughts.wordpress.com/2018/11/01/enhancing-your-cognition-and-your-creativity-qmt/
+https://neurodiversethoughts.wordpress.com/2018/11/01/enhance-your-cognition-and-your-creativity-qmt/
 
 MIT License
 
