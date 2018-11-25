@@ -112,7 +112,7 @@ void MainWindow::setupLayout()
     m_buttonQuit->setStyleSheet("background-color: #FF8888;");
 
     m_spinTime->setGeometry(90, 130, 60, 30);
-    m_spinTime->setTime(QTime(0, 2, 30, 0));
+    m_spinTime->setTime(QTime(0, 7, 30, 0));
 
     m_spinSound->setGeometry(95, 190, 50, 30);
     m_spinSound->setValue(2.0);
