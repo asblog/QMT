@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,15 +16,11 @@ SOURCES += main.cpp\
         mainWindow.cpp \
     spinTime.cpp \
     newStyle.cpp \
-    spinSound.cpp \
-    playSound.cpp
+    spinSound.cpp
 
 HEADERS  += mainWindow.h \
     spinTime.h \
     newStyle.h \
-    spinSound.h \
-    playSound.h
+    spinSound.h
 
 CONFIG += c++14
-
-LIBS += -lportaudio -lsndfile
