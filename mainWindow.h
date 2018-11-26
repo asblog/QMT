@@ -29,7 +29,6 @@
 #define MAINWINDOW_H
 
 #include "newStyle.h"
-#include "playSound.h"
 #include "spinSound.h"
 #include "spinTime.h"
 #include <QMainWindow>
@@ -67,8 +66,6 @@ private:
 
     SpinTime *m_spinTime;
     SpinSound *m_spinSound;
-
-    PlaySound m_playSound;
 
     random_device m_randDevice;
     mt19937 m_randGenerator;
