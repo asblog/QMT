@@ -30,6 +30,7 @@
 #include <QDir>
 #include <QKeyEvent>
 #include <QLineEdit>
+#include <QSound>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -86,8 +87,7 @@ void MainWindow::on_timer_sound()
 
     oldN = n;
 
-    m_playSound.read(QDir(QApplication::applicationDirPath()).filePath("sound/%1.wav").arg(n).toLocal8Bit().data());
-    m_playSound.play();
+    QSound::play(QDir(QApplication::applicationDirPath()).filePath("sound/%1.wav").arg(n).toLocal8Bit().data());
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
