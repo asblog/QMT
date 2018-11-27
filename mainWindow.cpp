@@ -59,7 +59,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     setupLayout();
 
+    #if defined(Q_OS_WIN)
+    m_randGenerator.seed(time(NULL)); // Hey Windows, Y U NO like random_device?
+    #else
     m_randGenerator.seed(m_randDevice());
+    #endif
 }
 
 void MainWindow::on_buttonQuit_clicked()
