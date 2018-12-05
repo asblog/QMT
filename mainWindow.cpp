@@ -106,6 +106,7 @@ void MainWindow::setupLayout()
     m_labelImage->setGeometry(230, 60, 200, 200);
 
     m_buttonStart->setGeometry(70, 50, 100, 50);
+    m_buttonStart->setStyleSheet("background-color: #BBFFBB;");
 
     m_buttonStop->setGeometry(70, 50, 100, 50);
     m_buttonStop->setStyleSheet("background-color: #AAAAAA;");
